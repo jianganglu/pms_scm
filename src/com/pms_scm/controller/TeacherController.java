@@ -15,7 +15,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.pms_scm.entities.Teacher;
+import com.pms_scm.entity.Teacher;
 import com.pms_scm.service.TeacherServiceI;
 
 @Controller
@@ -51,7 +51,7 @@ public class TeacherController {
 	
 	@RequestMapping(params = "addorupdate")
 	public String addorupdate(Teacher teacher,HttpServletRequest request){
-		if (!StringUtil.isEmpty(teacher.getId())){
+		if (StringUtil.isNotEmpty(teacher.getId())){
 			teacher = systemService.getEntity(Teacher.class, teacher.getId());
 			request.setAttribute("t", teacher);
 		}

@@ -42,7 +42,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.pms_scm.entities.Student;
+import com.pms_scm.entity.Student;
 import com.pms_scm.service.StudentService;
 
 
