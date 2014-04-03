@@ -34,7 +34,7 @@ public class ResourceUtil {
 	}
 	public static final TSUser getSessionUserName() {
 		HttpSession session = ContextHolderUtils.getSession();
-		session.setMaxInactiveInterval(-1);
+		session.setMaxInactiveInterval(60*30);
 		if (session.getAttributeNames().hasMoreElements()) {
 			SessionInfo sessionInfo1 = (SessionInfo) session.getAttribute(Globals.USER_SESSION);
 			if (sessionInfo1 != null) {

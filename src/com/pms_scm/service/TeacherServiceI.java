@@ -6,7 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.jeecgframework.core.common.model.json.DataGrid;
 import org.jeecgframework.core.common.service.CommonService;
 
-import com.pms_scm.entities.Teacher;
+import com.pms_scm.entity.Teacher;
 
 public interface TeacherServiceI extends CommonService{
 

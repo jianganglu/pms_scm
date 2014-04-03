@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.pms_scm.entities.Teacher;
+import com.pms_scm.entity.Teacher;
 import com.pms_scm.service.TeacherServiceI;
 
 @Service("teacherService")

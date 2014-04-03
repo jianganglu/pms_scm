@@ -105,7 +105,7 @@ public class LoginController {
 				message = "用户: " + user.getUserName() + "登录成功";
 				SessionInfo sessionInfo = new SessionInfo();
 				sessionInfo.setUser(u);
-				session.setMaxInactiveInterval(60 * 30);
+				session.setMaxInactiveInterval(-1);
 				session.setAttribute(Globals.USER_SESSION, sessionInfo);
 				// 添加登陆日志
 				systemService.addLog(message, Globals.Log_Type_LOGIN, Globals.Log_Leavel_INFO);
@@ -207,7 +207,7 @@ public class LoginController {
 			roles += role.getRoleName() + ",";
 			List<TSRoleFunction> roleFunctionList = ResourceUtil.getSessionTSRoleFunction(role.getId());
 			if (roleFunctionList == null) {
-				session.setMaxInactiveInterval(60 * 30);
+				session.setMaxInactiveInterval(-1);
 				roleFunctionList = systemService.findByProperty(TSRoleFunction.class, "TSRole.id", role.getId());
 				session.setAttribute(role.getId(), roleFunctionList);
 			//update-begin--Author:tanghong  Date:20130531 for：[140]左侧菜单报错

@@ -1,4 +1,4 @@
-package com.pms_scm.entities;
+package com.pms_scm.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
