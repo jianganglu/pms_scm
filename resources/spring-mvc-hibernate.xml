@@ -92,8 +92,7 @@
     <value>jeecg.system.pojo.*</value>
     <value>jeecg.demo.entity.*</value>
     <value>jeecg.test.entity.*</value>
-    <value>com.pms_scm.entities</value>
-    <value>com.pms_scm.entities.Student</value>
+    <value>com.pms_scm.entity</value>
    </list>
   </property>
  </bean>
