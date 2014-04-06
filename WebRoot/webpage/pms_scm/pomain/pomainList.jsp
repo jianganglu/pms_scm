@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@include file = "/context/mytags.jsp"%>
 <t:datagrid actionUrl="pomainController.do?dataGrid" name="pomainList" title="管理釆购单" fit="true" fitColumns="true" queryMode="group" idField="id">
+	<t:dgCol field="id" title="id" hidden="false"></t:dgCol>
 	<t:dgCol field="pomainId" title="采购单单号" hidden="false"></t:dgCol>
 	<t:dgCol field="productCode" title="釆购产品" query="true"></t:dgCol>
 	<t:dgCol field="createTime" title="创建时间" query="true" queryMode="single"></t:dgCol>

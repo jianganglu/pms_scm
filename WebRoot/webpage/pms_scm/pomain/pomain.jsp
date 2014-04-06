@@ -23,7 +23,7 @@
 		 		<label class="Validform_label">
 		 			创建用户：
 		 		</label>
-		 		<input type="text" name="productCode" class="inputxt" value="${pomain.productCode}"/>
+		 		<input type="text" name="account" class="inputxt" value="${pomain.account}"/>
 		 		<span class="Validform_checktip"></span>
 		 	</div>
 		 	<div class="form">
