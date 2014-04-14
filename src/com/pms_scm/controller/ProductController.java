@@ -1,10 +1,14 @@
 package com.pms_scm.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import jeecg.demo.entity.test.JeecgDemo;
 import jeecg.system.service.SystemService;
 
+import org.jeecgframework.core.common.hibernate.qbc.CriteriaQuery;
 import org.jeecgframework.core.common.model.json.AjaxJson;
 import org.jeecgframework.core.common.model.json.DataGrid;
 import org.jeecgframework.core.constant.Globals;
@@ -81,6 +85,17 @@ public class ProductController {
 		}
 		j.setMsg(message);
 		return j;
+	}
+	
+	/**
+	 * 产品列表
+	 */
+	@RequestMapping(params = "combox")
+	@ResponseBody
+	public List<Product> combox(HttpServletRequest request, DataGrid dataGrid) {
+		CriteriaQuery cq = new CriteriaQuery(Product.class);
+		List<Product> ls = this.productService.getListByCriteriaQuery(cq, false);
+		return ls;
 	}
 		
 }

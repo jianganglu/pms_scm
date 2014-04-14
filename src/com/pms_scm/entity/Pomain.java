@@ -19,7 +19,7 @@ import org.jeecgframework.core.common.entity.IdEntity;
 public class Pomain extends IdEntity implements java.io.Serializable {
 
 	private static final long serialVersionUID = 1L;
-	private int pomainId;
+	private String pomainId;
 	private String account;
 	private String createTime;
 	private String productCode;
@@ -60,11 +60,11 @@ public class Pomain extends IdEntity implements java.io.Serializable {
 	}
 
 	@Column(name = "pomainId")
-	public int getPomainId() {
+	public String getPomainId() {
 		return pomainId;
 	}
 
-	public void setPomainId(int pomainId) {
+	public void setPomainId(String pomainId) {
 		this.pomainId = pomainId;
 	}
 
