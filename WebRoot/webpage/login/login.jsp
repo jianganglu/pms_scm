@@ -77,7 +77,8 @@ label.iPhoneCheckLabelOn span {
    <div class="ribbon" style="background-image:url(plug-in/login/images/typelogin.png);"></div>
    <div class="inner">
     <div class="logo">
-     <img src="plug-in/login/images/toplogo-jeecg.png"/>
+     <%-- <img src="plug-in/login/images/toplogo-jeecg.png"/> --%>
+     <img src="plug-in/login/images/toplogo-scm.png"/>
     </div>
     <div class="formLogin">
      <form name="formLogin" id="formLogin" action="loginController.do?login" check="loginController.do?checkuser" method="post">

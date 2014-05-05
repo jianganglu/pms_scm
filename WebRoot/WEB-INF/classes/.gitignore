@@ -1,6 +1,13 @@
-/.gitignore
-/org
-/test
-/com
 /jeecg
+/log4j.properties
+/spring-mvc-aop.xml
+/spring-mvc-context.xml
+/spring-mvc-hibernate.xml
+/spring-mvc.xml
+/sysConfig.properties
+/com
+/dbconfig.properties
+/ehcache.xml
+/org
 /spring
+/test

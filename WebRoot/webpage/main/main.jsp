@@ -4,7 +4,7 @@
 <!DOCTYPE html >
 <html>
  <head>
-  <title>JEECG_v3.1 Simple版本</title>
+  <title>供应链系统管理</title>
   <t:base type="jquery,easyui,tools,DatePicker"></t:base>
   <link rel="shortcut icon" href="images/favicon.ico">
   <style type="text/css">
@@ -34,11 +34,11 @@ a:hover {
  </head>
  <body class="easyui-layout" style="overflow-y: hidden" scroll="no">
   <!-- 顶部-->
-  <div region="north" border="false" title="JEECG_v3.1 Simple版本" style="BACKGROUND:#E6E6FA;height: 85px; padding: 1px; overflow: hidden;">
+  <div region="north" border="false" title="供应链系统管理" style="BACKGROUND:#E6E6FA;height: 85px; padding: 1px; overflow: hidden;">
    <table width="100%" border="0" cellpadding="0" cellspacing="0">
     <tr>
      <td align="left" style="vertical-align:text-bottom" >
-      <img src="plug-in/login/images/toplogo-main.png" >
+      <img src="plug-in/login/images/toplogo-main1.png" >
       <!--
       <img src="plug-in/login/images/toplogo.png" width="550" height="52" alt="">-->
      </td>
@@ -112,7 +112,7 @@ a:hover {
   <div region="south" border="false" style="height: 25px; overflow: hidden;">
     <div align="center" style="color: #CC99FF; padding-top: 2px">
     &copy; 版权所有
-     <span class="tip"><a href="http://www.jeecg.org" title="JEECG_v3.1 Simple版本">JEECG_v3.1</a> (推荐谷歌浏览器，获得更快响应速度)  技术支持:<a href="#" title="JEECG_v3.1 Simple版本">JEECG_v3.1</a></span>
+     <span class="tip"><a href="#" title="鲁剑刚">鲁剑刚</a> (推荐谷歌浏览器，获得更快响应速度)  技术支持:<a href="#" title="">鲁剑刚</a></span>
    </div>
   </div>
   <div id="mm" class="easyui-menu" style="width:150px;">

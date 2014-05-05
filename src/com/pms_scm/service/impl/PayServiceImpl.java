@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.pms_scm.entity.Pomain;
+import com.pms_scm.entity.Somain;
 import com.pms_scm.service.PayServiceI;
 
 @Service("payService")
@@ -32,6 +33,14 @@ public class PayServiceImpl extends CommonServiceImpl implements PayServiceI{
 	public void getDataGrid(Pomain pomain, HttpServletRequest request, HttpServletResponse response, DataGrid dataGrid) {
 		CriteriaQuery cq = new CriteriaQuery(Pomain.class, dataGrid);
 		cq.add(Restrictions.sqlRestriction("({alias}.payType='货到付款' and {alias}.status='已入库') or ({alias}.payType='款到发货' and {alias}.status='新建') or ({alias}.payType='预付款到发货' and {alias}.status='已入库') or ({alias}.payType='预付款到发货' and {alias}.status='新建')"));
+		systemService.getDataGridReturn(cq, true);
+		TagUtil.datagrid(response, dataGrid);
+	}
+	
+	@Override
+	public void getDataGridSomain(Somain somain, HttpServletRequest request, HttpServletResponse response, DataGrid dataGrid) {
+		CriteriaQuery cq = new CriteriaQuery(Somain.class, dataGrid);
+		cq.add(Restrictions.sqlRestriction("({alias}.payType='货到付款' and {alias}.status='已出库') or ({alias}.payType='款到发货' and {alias}.status='新建') or ({alias}.payType='预付款到发货' and {alias}.status='已出库') or ({alias}.payType='预付款到发货' and {alias}.status='新建')"));
 		systemService.getDataGridReturn(cq, true);
 		TagUtil.datagrid(response, dataGrid);
 	}

@@ -39,7 +39,7 @@ public class BaseTag extends TagSupport {
 				//sb.append("<script type=\"text/javascript\" src=\"plug-in/tools/jquery.cookie.js\"></script>");
 				//sb.append("<script type=\"text/javascript\" src=\"plug-in/tools/changeEasyuiTheme.js\"></script>");
 				sb.append("<script type=\"text/javascript\" src=\"plug-in/tools/dataformat.js\"></script>");
-				sb.append("<link id=\"easyuiTheme\" rel=\"stylesheet\" href=\"plug-in/easyui/themes/default/easyui.css\" type=\"text/css\"></link>");
+				sb.append("<link id=\"easyuiTheme\" rel=\"stylesheet\" href=\"plug-in/easyui/themes/bootstrap/easyui.css\" type=\"text/css\"></link>");
 				sb.append("<link rel=\"stylesheet\" href=\"plug-in/easyui/themes/icon.css\" type=\"text/css\"></link>");
 				sb.append("<link rel=\"stylesheet\" type=\"text/css\" href=\"plug-in/accordion/css/accordion.css\">");
 				sb.append("<script type=\"text/javascript\" src=\"plug-in/easyui/jquery.easyui.min.1.3.2.js\"></script>");
