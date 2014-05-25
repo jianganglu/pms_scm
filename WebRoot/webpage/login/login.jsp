@@ -122,7 +122,7 @@ label.iPhoneCheckLabelOn span {
   <div id="versionBar">
    <div class="copyright">
     &copy; 版权所有
-    <span class="tip"><a href="#" title="JEECG 新版演示系统">jeecg</a> (推荐使用IE8+,谷歌浏览器可以获得更快,更安全的页面响应速度)技术支持:<a href="#" title="JEECG 新版演示系统">jeecg</a></span>
+    <span class="tip"><a href="#" title="供应链系统管理">pms_scm</a> (推荐使用IE8+,谷歌浏览器可以获得更快,更安全的页面响应速度)技术支持:<a href="#" title="供应链系统管理">pms_scm</a></span>
    </div>
   </div>
     <!-- Link JScript-->
