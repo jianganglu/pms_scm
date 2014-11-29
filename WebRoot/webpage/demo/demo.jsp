@@ -4,6 +4,7 @@
 <html>
  <head>
   <title>DEMO1添加1</title>
+  
   <t:base type="jquery,easyui,tools"></t:base>
  </head>
  <body style="overflow-y: hidden" scroll="no">
