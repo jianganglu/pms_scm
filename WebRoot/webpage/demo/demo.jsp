@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <title>DEMO添加1</title>
+  <title>DEMO添加12</title>
   <t:base type="jquery,easyui,tools"></t:base>
  </head>
  <body style="overflow-y: hidden" scroll="no">
